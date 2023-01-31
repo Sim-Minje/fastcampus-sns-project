@@ -5,10 +5,16 @@ spring.jpa:
   properties.hibernate.format_sql: true
   show-sql: true
 
-spring.datasourece:
-  hikari.maxium-pool-size: 4
-  url:
-  username:
-  password:
-  platform: postgres
-  driver-class-name: org.postgresql.Driver
+spring:
+  datasource:
+    hikari.maxium-pool-size: 4
+    url: jdbc:postgresql://ec2-52-3-200-138.compute-1.amazonaws.com/d7bjks1c43p2ga
+    username: ilguwqxlhhdega
+    password: 6a1f55e4c6e35f6ce056655f867f73152c993aa60d078d60a809413976d2b926
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+
+jwt:
+  secret-key: fast_campus.sns-application-2022.secre_key
+  token:
+    expired-time-ms: 2592000000
